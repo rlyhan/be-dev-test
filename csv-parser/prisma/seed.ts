@@ -5,6 +5,10 @@ import { join } from 'path'
 import { prisma } from '../lib/prisma'
 import { parseCustomers } from '../lib/parse-customers'
 
+/*
+ * Seeding script for populating the database with initial customer data
+ * WARNING: This will delete all existing customers before seeding new data
+ */
 async function main() {
     const rows = parse(readFileSync(join(process.cwd(), '../data/customers.csv'), 'utf-8'), {
         columns: true,
