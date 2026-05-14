@@ -63,6 +63,16 @@ Returns a paginated list of customers.
 }
 ```
 
+## Viewing the Database
+
+Use Prisma Studio to browse and edit the database via a web UI:
+
+```bash
+npx prisma studio
+```
+
+This opens a browser at [http://localhost:51212](http://localhost:51212) where you can inspect tables, filter records, and edit data directly.
+
 ## Running Tests
 
 ```bash
