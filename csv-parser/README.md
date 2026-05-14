@@ -16,8 +16,9 @@ Imports a customer CSV file into a SQLite database.
    DATABASE_URL="file:./dev.db"
    ```
 3. Apply database migrations: `npx prisma migrate dev`
-4. Seed the database: `npx prisma db seed` (note: if the DB has already been populated, this will replace any existing users)
-5. Start the development server: `npm run dev`
+4. Generate the Prisma client: `npx prisma generate`
+5. Seed the database: `npx prisma db seed` (note: if the DB has already been populated, this will replace any existing users)
+6. Start the development server: `npm run dev`
 
 The app will be available at [http://localhost:3000](http://localhost:3000).
 
